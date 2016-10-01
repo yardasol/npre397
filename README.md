@@ -12,7 +12,8 @@ independent study section at UofI.
 Find your course materials by navigating to the appropriate semester among the 
 repository branches. The following are available:
 
-- [2016-fall](https://github.com/katyhuff/npre397/tree/2016-fall)
+- [2016-fall-fuel-cycle](https://github.com/katyhuff/npre397/tree/2016-fall-fuel-cycle)
+- [2016-fall-sr-design](https://github.com/katyhuff/npre397/tree/2016-fall-sr-design)
 
 ## Updates
 
