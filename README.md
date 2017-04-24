@@ -14,6 +14,7 @@ repository branches. The following are available:
 
 - [2016-fall-fuel-cycle](https://github.com/katyhuff/npre397/tree/2016-fall-fuel-cycle)
 - [2016-fall-sr-design](https://github.com/katyhuff/npre397/tree/2016-fall-sr-design)
+- [2017-sum-fuel-cycle](https://github.com/katyhuff/npre397/tree/2017-sum-fuel-cycle)
 
 ## Updates
 
