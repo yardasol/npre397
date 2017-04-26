@@ -1,0 +1,144 @@
+% use the answers clause to get answers to print; otherwise leave it out.
+\documentclass[12pts, answers]{exam}
+%\documentclass[12pts]{exam}
+\RequirePackage{amssymb, amsfonts, amsmath, latexsym, verbatim, xspace, setspace}
+
+% By default LaTeX uses large margins.  This doesn't work well on exams; problems
+% end up in the "middle" of the page, reducing the amount of space for students
+% to work on them.
+\usepackage[margin=1in]{geometry}
+\usepackage{enumerate}
+\usepackage{hyperref}
+
+% Here's where you edit the Class, Exam, Date, etc.
+\newcommand{\class}{NPRE 397}
+\newcommand{\term}{Summer 2017}
+\newcommand{\assignment}{Nuclear Fuel Cycle Project}
+\newcommand{\duedate}{2017.08.04}
+%\newcommand{\timelimit}{50 Minutes}
+
+\newcommand{\nth}{n\ensuremath{^{\text{th}}} }
+\newcommand{\ve}[1]{\ensuremath{\mathbf{#1}}}
+\newcommand{\Macro}{\ensuremath{\Sigma}}
+\newcommand{\vOmega}{\ensuremath{\hat{\Omega}}}
+
+% For an exam, single spacing is most appropriate
+\singlespacing
+% \onehalfspacing
+% \doublespacing
+
+% For an exam, we generally want to turn off paragraph indentation
+\parindent 0ex
+
+%\unframedsolutions
+\usepackage{bibentry}
+\begin{document} 
+
+% These commands set up the running header on the top of the exam pages
+\pagestyle{head}
+\firstpageheader{}{}{}
+\runningheader{\class}{\assignment\ - Page \thepage\ of \numpages}{Due \duedate}
+\runningheadrule
+
+\class \hfill \term \\
+\assignment \hfill Due \duedate\\
+%\begin{flushright}
+%\begin{tabular}{p{5in} r l}
+%\end{tabular}
+%\end{flushright}
+\rule[1ex]{\textwidth}{.1pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+For \class, your total grade will be earned through a comprehensive project. It 
+is intended to tie together ideas regarding reactor physics and fuel cycle 
+analysis. This will culminate in an independent analysis of fresh and spent 
+fuel isotopic compositions for current and advanced reactors. 
+The project will be assessed as independent research work, much 
+like a journal article undergoes peer review. I will be looking for : 
+
+\begin{itemize}
+\item Relevance
+\item Technical Detail 
+\item Analytic Rigor
+\item Verifiability
+\item Clarity
+\item A Conclusion
+\end{itemize}
+
+This work will consist of three deliverables:
+\begin{itemize}
+        \item a work plan,
+        \item a database of fresh and spent fuel compositions,
+        \item and a final report. 
+\end{itemize}
+
+% ---------------------------------------------
+\begin{questions}
+\addpoints
+% intro
+\question[10] \textbf{Work Plan: Due 2017.05.30}
+
+To help establish scope and milestones, the first step of the project will be a 
+        work plan. Once you submit this plan, I will respond with feedback and 
+        appropriate GitHub issues will be assigned. The plan should meet the 
+        following guidelines:
+
+\begin{itemize}
+\item Minimum 500 words.
+\item Maximum 1000 words.
+\item Two columns.
+\item Reasonable margins.
+\item 10 pt font or larger.
+\item State the problem to be approached.
+\item Motivate the problem, explaining its relevance.
+\item Summarize the current state of existing data. 
+\item Describe the approach and methods you will take to generate the database.
+\item Propose a prioritized list of reactor types that will be evaluated. 
+\item For each reactor type, identify references for core design parameters.
+\item Propose a schedule for the analysis.
+\item Fully describe the data that will be delivered.
+\end{itemize}
+
+Please arrange at least one short meeting with me before the project plan
+so that I can help you refine your schedule. I would be happy to provide feedback 
+on a draft of your plan (once) before it is due.
+
+
+\question[20] \textbf{Database: Due \duedate}
+Prepare a database, for use with the Cycamore Reactor model in the Cyclus 
+framework. The database should be in xml, json, or another Cyclus-compatible 
+format. The database should contain fresh fuel compositions and spent fuel 
+compositions for reactors of interest.
+
+\question[60] \textbf{Final Report: Due \duedate}
+
+Prepare a final document in the style of a journal article or conference 
+proceedings. It should meet the following guidelines:
+
+\begin{itemize}
+\item Minimum 3000 words.
+\item Maximum 10000 words.
+\item Two columns.
+\item Reasonable margins.
+\item 10 pt font or larger.
+\item State the problem that was approached.
+\item Motivate the problem, explaining its relevance.
+\item Comprehensively report and cite the current state of the art in the literature.
+\item Describe the approach, methods, and other elements of your solution.
+\item Describe in detail: the analysis, software, data, conclusions produced in this work.
+\item For each reactor type evaluated, tabulate core design parameters.
+\item Include publication quality graphs and figures.
+\item Cite and provide data and code generated for this work sufficient to reproduce the conclusions.
+\item Compare this result to previous results in the literature, reinforce the relevance of the work. 
+\item Suggest future work.
+\end{itemize}
+
+\end{questions}
+
+
+%\bibliographystyle{plain}
+%\bibliography{}
+
+\end{document}
