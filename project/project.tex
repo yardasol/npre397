@@ -9,12 +9,13 @@
 \usepackage[margin=1in]{geometry}
 \usepackage{enumerate}
 \usepackage{hyperref}
+\usepackage{color,soul}
 
 % Here's where you edit the Class, Exam, Date, etc.
 \newcommand{\class}{NPRE 397}
-\newcommand{\term}{Summer 2017}
-\newcommand{\assignment}{Nuclear Fuel Cycle Project}
-\newcommand{\duedate}{2017.08.04}
+\newcommand{\term}{Spring 2025}
+\newcommand{\assignment}{Nueutron Transport Project}
+\newcommand{\duedate}{2025.05.07}
 %\newcommand{\timelimit}{50 Minutes}
 
 \newcommand{\nth}{n\ensuremath{^{\text{th}}} }
@@ -41,8 +42,7 @@
 \runningheadrule
 
 \class \hfill \term \\
-\assignment \hfill Due \duedate\\
-%\begin{flushright}
+\assignment \hfill Due \duedate\\ %\begin{flushright}
 %\begin{tabular}{p{5in} r l}
 %\end{tabular}
 %\end{flushright}
@@ -51,16 +51,12 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-For \class, your total grade will be earned through a comprehensive project. It 
-is intended to tie together ideas regarding reactor physics and fuel cycle 
-analysis. This will culminate in an independent analysis of fresh and spent 
-fuel isotopic compositions for current and advanced reactors. 
+For \class, your total grade will be earned through multiple scientific and 
+technical paper reviews as well as contribution to a comprehensive project. It 
+is intended to tie together ideas regarding technical writing, neutron 
+transport, and numerical methods. 
 
-The primary work will be to prepare a database, for use with the Cycamore 
-Reactor model in the Cyclus framework. The database should be in xml, json, or 
-another Cyclus-compatible format. The database should contain fresh fuel 
-compositions and spent fuel compositions for reactors of interest as generated 
-by a depletion-capable code such as Scale/Origen or MCNP/Serpent. 
+The primary work will be to prepare \hl{\textbf{insert plan here}}.
 
 The project will be assessed as independent research work, much 
 like a journal article undergoes peer review. I will be looking for : 
@@ -74,74 +70,44 @@ like a journal article undergoes peer review. I will be looking for :
 \item A Conclusion
 \end{itemize}
 
-This work will consist of three deliverables:
+This work will consist of four deliverables:
+
 \begin{itemize}
         \item a work plan,
-        \item a database of fresh and spent fuel compositions,
-        \item and a final report. 
+        \item completion of the Stanford Writing in the Sciences MOOC,
+        \item editorial reviews on at least two technical documents,
+        \item and \hl{\textbf{final deliverable. coauthored paper with olek?}}.
 \end{itemize}
 
 % ---------------------------------------------
 \begin{questions}
 \addpoints
 % intro
-\question[10] \textbf{Work Plan: Due 2017.05.30}
+\question[10] \textbf{Work Plan: Due 2025.01.23}
 
-To help establish scope and milestones, the first step of the project will be a 
-        work plan. Once you submit this plan, I will respond with feedback and 
-        appropriate GitHub issues will be assigned. The plan should meet the 
-        following guidelines:
+To help establish scope and milestones, the first step of the project will be 
+        a 
+        work plan. This plan, developed under supervision of Graduate Research 
+        Assistant Olek Yardas, will be delivered in the form of multiple GitHub 
+        issues with descriptions and deadlines describing the work you intend 
+        to do in the ARFC group. Start with completing the ARFC new member 
+        \href{https://github.com/orgs/arfc/projects/37/views/1}{checklist.}
 
-\begin{itemize}
-\item Minimum 500 words.
-\item Maximum 1000 words.
-\item Two columns.
-\item Reasonable margins.
-\item 10 pt font or larger.
-\item State the problem to be approached.
-\item Motivate the problem, explaining its relevance.
-\item Summarize the current state of existing data. 
-\item Describe the approach and methods you will take to generate the database.
-\item Propose a prioritized list of reactor types that will be evaluated. 
-\item For each reactor type, identify references for core design parameters.
-\item Propose a schedule for the analysis.
-\item Fully describe the data that will be delivered.
-\end{itemize}
-
-Please arrange at least one short meeting with me before the project plan
+Please arrange at least one short meeting with Prof. Huff to discuss the project plan
 so that I can help you refine your schedule. I would be happy to provide feedback 
 on a draft of your plan (once) before it is due.
 
+\question[20] \textbf{Writing in the Sciences Self-Study: Due \duedate}
+        Watch the full set of videos hosted at
+        \href{https://www.coursera.org/learn/sciwrite/}{Coursera}.
 
-\question[20] \textbf{Database: Due \duedate}
-Prepare a database, for use with the Cycamore Reactor model in the Cyclus 
-framework. The database should be in xml, json, or another Cyclus-compatible 
-format. The database should contain fresh fuel compositions and spent fuel 
-compositions for reactors of interest as generated by a depletion-capable code 
-such as Scale/Origen or MCNP/Serpent. 
+\question[20] \textbf{Editorial Reviews: Due \duedate}
+Complete at least two editorial reviews of ARFC technical writing in 
+        collaboration with colleages within the ARFC group. 
 
-\question[60] \textbf{Final Report: Due \duedate}
-
-Prepare a final document in the style of a journal article or conference 
-proceedings. It should meet the following guidelines:
-
-\begin{itemize}
-\item Minimum 3000 words.
-\item Maximum 10000 words.
-\item Two columns.
-\item Reasonable margins.
-\item 10 pt font or larger.
-\item State the problem that was approached.
-\item Motivate the problem, explaining its relevance.
-\item Comprehensively report and cite the current state of the art in the literature.
-\item Describe the approach, methods, and other elements of your solution.
-\item Describe in detail: the analysis, software, data, conclusions produced in this work.
-\item For each reactor type evaluated, tabulate core design parameters.
-\item Include publication quality graphs and figures.
-\item Cite and provide data and code generated for this work sufficient to reproduce the conclusions.
-\item Compare this result to previous results in the literature, reinforce the relevance of the work. 
-\item Suggest future work.
-\end{itemize}
+\question[60] \textbf{Final Deliverable: Due \duedate}
+        \hl{Complete this section to describe the main accomplishment you 
+        expect to achieve in spring semester.}
 
 \end{questions}
 
